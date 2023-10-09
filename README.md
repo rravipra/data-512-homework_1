@@ -1,5 +1,82 @@
 # Professionalism and Reproducibility
 
-# Project Goal: 
-The goal is to construct, analyze, and publish a dataset of monthly article traffic for a select set of pages from English Wikipedia from July 1, 2015 through September 30, 2023 and to develop and follow best practices for open scientific research.
+# Goal: 
+The goal of the project is to construct, analyze, and publish a dataset of monthly article traffic for a select set of pages from English Wikipedia from July 1, 2015 through September 30, 2023 and to develop and follow best practices for open scientific research.
+
+# Data:
+
+API Licensed under:  https://creativecommons.org/licenses/by-sa/3.0/
+https://www.gnu.org/licenses/fdl-1.3.html
+
+API endpoint: https://wikimedia.org/api/rest_v1/#!/Pageviews_data/get_metrics_pageviews_aggregate_project_access_agent_granularity_start_end
+
+Terms and conditions: https://www.mediawiki.org/wiki/REST_API#Terms_and_conditions
+
+API Documentation:  https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews
+
+# Code files:
+
+The only notebook file in this repository is the 512_HW1_code.ipynb file. This file consists of the some code in the beginning from the example notebook (here: https://colab.research.google.com/corgiredirector?site=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1XjFhd3eXx704tcdfQ4Q1OQn0LWKCRNJm%2Fview%3Fusp%3Dsharing) with a few changes which I have explicitly mentioned in the notebook. The notebook then consists of the code for acquiring the data from the Pageviews API and saving them as JSON files based on the type of access. Finally, it consists of the code for data analysis and creating time series graphs to get insights on that data based on a few specific questions which you can read through in the notebook.
+
+# Data Files created from the code:
+
+1) academy_monthly_desktop_20150101-20230401.json
+2) academy_monthly_mobile_20150101-20230401.json
+3) academy_monthly_cumulative_20150101-20230401.json
+
+All of these can be found in the JSON_files.rar folder from where you can extract it from.
+
+Structure of the JSON files:
+Key: The movie (or article) name, e.g., "Everything Everywhere All at Once".
+
+Value: A list of dictionaries. Each dictionary provides data about monthly views for the corresponding movie on Wikipedia.
+
+Fields in the Dictionary:
+project: The Wikipedia project. In this case, it's "en.wikipedia", which refers to the English version of Wikipedia.
+
+article: The Wikipedia article's name, using underscores in place of spaces. This matches the key of the outer dictionary. Example: "Everything_Everywhere_All_at_Once".
+
+granularity: The granularity of the view data. It's "monthly" for our dataset, which means each entry represents one month's views.
+
+timestamp: A timestamp indicating the starting time of the data. The format is YYYYMMDDHH. For example, "2020010100" refers to January 1, 2020, at 00:00 hours.
+
+agent: The type of agent accessing the article. In this dataset, it's always "user", referring to human readers as opposed to bots or web crawlers.
+
+views: The number of views for the article in the corresponding month. This is an integer value. For example, in January 2020, the article "Everything Everywhere All at Once" was viewed 1,209 times.
+
+Example structure:
+
+{'article1' : [
+    {article1,
+     month1...
+    },
+    {article1,
+     month2...
+    }
+    ...
+    ],
+'article2': [
+    {article2,
+     month1...
+    },    
+    {article2,
+     month2...
+    },
+    ...
+    ]
+}
+
+
+# Images of graphs acquired from the code outputs:
+
+The code also outputs 3 Time Series graphs of which I have taken screenshots of, the three files for that in this folder would be:
+1) Graph1.png
+2) Graph2.png
+3) Graph3.png
+
+The naming conventions are the same as in the notebook which would make it easier to refer to and to reproduce it.
+
+# Considerations with the Data:
+
+
 
