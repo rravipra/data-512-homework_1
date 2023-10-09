@@ -90,7 +90,9 @@ The naming conventions are the same as in the notebook which would make it easie
 
 # Considerations with the Data:
 
-It is important to note that data for every day from the start date to the end date which you are trying to extract the data from will not necessarily be available. There are a lot of days for which the data is not present. You could refer to the outputs of the DataFrame in the notebook (512_HW1_code.ipynb) of the data that we acquire that there are many NA values.
+- It is important to note that data for every day from the start date to the end date which you are trying to extract the data from will not necessarily be available. There are a lot of days for which the data is not present. You could refer to the outputs of the DataFrame in the notebook (512_HW1_code.ipynb) of the data that we acquire that there are many NA values.
+
+- Another thing to keep in mind is that in the request_pageviews_per_article function from the example notebook where the urllib.parse.quote function is used I have added an extra parameter safe = '' so that there are no issues while acquiring the data. In the example notebook the code does not add that parameter and based on the articles that you are trying to extract the data for you might run into issues such as 'KeyError' so I would recommend that you add that parameter.
 
 
 
