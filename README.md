@@ -56,28 +56,46 @@ Example structure:
 {
     'article1' : [
         {
-            article1,
-            month1...
+            "project": "en.wikipedia, 
+            "article": article1,
+            "granularity": "monthly",
+            "timestamp": month1_article1,
+            "agent": "user",
+            "views" : num_views_1_article1
         },
         {
-            article1,
-            month2...
+            "project": "en.wikipedia, 
+            "article": article1,
+            "granularity": "monthly",
+            "timestamp": month2_article1,
+            "agent": "user",
+            "views" : num_views_2_article1
         },
         ...
     ],
     'article2': [
         {
-            article2,
-            month1...
+            "project": "en.wikipedia, 
+            "article": article2,
+            "granularity": "monthly",
+            "timestamp": month1_article2,
+            "agent": "user",
+            "views" : num_views_1_article2
         },    
         {
-            article2,
-            month2...
+            "project": "en.wikipedia, 
+            "article": article2,
+            "granularity": "monthly",
+            "timestamp": month1_article1,
+            "agent": "user",
+            "views" : num_views_2_article2
         },
         ...
     ]
 }
 ```
+
+Here month1_article1 is the first month of article1 and month2_article2 is the second month of article2. The format is mentioned above in the structure. The same with views num_views_1_article1 is the number of views of article1 for the first month and num_views_2_article1 is the number of views of article1 for the second month and so on.
 
 # Images of graphs acquired from the code outputs:
 
