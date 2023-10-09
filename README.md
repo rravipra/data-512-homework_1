@@ -56,7 +56,7 @@ Example structure:
 {
     'article1' : [
         {
-            "project": "en.wikipedia, 
+            "project": "en.wikipedia", 
             "article": article1,
             "granularity": "monthly",
             "timestamp": month1_article1,
@@ -64,7 +64,7 @@ Example structure:
             "views" : num_views_1_article1
         },
         {
-            "project": "en.wikipedia, 
+            "project": "en.wikipedia", 
             "article": article1,
             "granularity": "monthly",
             "timestamp": month2_article1,
@@ -75,7 +75,7 @@ Example structure:
     ],
     'article2': [
         {
-            "project": "en.wikipedia, 
+            "project": "en.wikipedia", 
             "article": article2,
             "granularity": "monthly",
             "timestamp": month1_article2,
@@ -83,7 +83,7 @@ Example structure:
             "views" : num_views_1_article2
         },    
         {
-            "project": "en.wikipedia, 
+            "project": "en.wikipedia", 
             "article": article2,
             "granularity": "monthly",
             "timestamp": month1_article1,
