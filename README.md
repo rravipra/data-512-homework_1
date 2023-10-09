@@ -1,6 +1,7 @@
 # Professionalism and Reproducibility
 
-# Goal: 
+# Goal:
+
 The goal of the project is to construct, analyze, and publish a dataset of monthly article traffic for a select set of pages from English Wikipedia from July 1, 2015 through September 30, 2023 and to develop and follow best practices for open scientific research.
 
 # Data:
@@ -89,7 +90,7 @@ The naming conventions are the same as in the notebook which would make it easie
 
 # Considerations with the Data:
 
-It is important to note that data for every day from the start date to the end date which you are trying to extract the data from will not necessarily be available. There are a lot of days for which the data is not present. You could refer to the outputs on 
+It is important to note that data for every day from the start date to the end date which you are trying to extract the data from will not necessarily be available. There are a lot of days for which the data is not present. You could refer to the outputs of the DataFrame in the notebook (512_HW1_code.ipynb) of the data that we acquire that there are many NA values.
 
 
 
