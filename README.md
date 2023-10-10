@@ -100,7 +100,7 @@ Here month1_article1 is the first month of article1 and month2_article2 is the s
 # Images of graphs acquired from the code outputs:
 
 The code also outputs 3 Time Series graphs of which I have taken screenshots of, the three files for that in this folder would be:
-1) Graph1.png (Note: In this graph from the image df refers to the Desktop and df2 refers to the Mobile when you are reading the legends)
+1) Graph1.png Note: In this graph from the image df refers to the Desktop and df2 refers to the Mobile when you are reading the legends
 2) Graph2.png
 3) Graph3.png
 
